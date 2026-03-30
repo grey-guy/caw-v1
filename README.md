@@ -54,14 +54,14 @@ Ensure your environment meets the following requirements before proceeding:
 Open your terminal (Mac/Linux) or Command Prompt/PowerShell (Windows), then run:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://whirlpoolbrackensnzlm75944@bitbucket.org/sofi-caw/main.git
 ```
 
 
 ### 2. Navigate into the Project Directory
 
 ```bash
-cd your-repo-name
+cd main
 ```
 
 ### 3. Install Dependencies
