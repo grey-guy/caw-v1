@@ -51,11 +51,7 @@ Ensure your environment meets the following requirements before proceeding:
 
 ### 1. Clone the Repository
 
-Open your terminal (Mac/Linux) or Command Prompt/PowerShell (Windows), then run:
-
-```bash
-git clone https://whirlpoolbrackensnzlm75944@bitbucket.org/sofi-caw/main.git
-```
+Open your terminal (Mac/Linux) or Command Prompt/PowerShell (Windows), then run the command that you can see if you click the ***clone*** button on bitbucket UI.
 
 
 ### 2. Navigate into the Project Directory
