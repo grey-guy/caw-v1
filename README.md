@@ -1,61 +1,141 @@
-# 🌙 CAW Frontend 
-<p align="center">
-  <a href="https://caw.is">
-      <img src="public/assets/tokens/caw.png" height="128">
-  </a>  
-<br>
-<br>
-</p>
+---
 
-# About CAW - A Hunters Dream
+# CAW
+
+
+---
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Cloning the Repository](#cloning-the-repository)
+  - [Installing Dependencies](#installing-dependencies)
+- [Running the Application](#running-the-application)
+- [Additional Tips](#additional-tips)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+
+---
+
+## Prerequisites
+
+Ensure your environment meets the following requirements before proceeding:
+
+### 1. Install Node.js and npm
+
+- **Node.js** (version 18.x or higher) is required to run React and Node applications.
+- **npm** (Node Package Manager) comes bundled with Node.js.
+
+**Installation Guides:**
+
+- [Download Node.js](https://nodejs.org/)  
+  Follow the instructions for your operating system (Mac, Linux, Windows).
+
+### 2. Install Git
+
+- Git is needed to clone the repository.
+
+**Installation Guides:**
+
+- [Download Git](https://git-scm.com/downloads)  
+  Follow the instructions for your operating system.
+
+### 3. (Optional) Install a Code Editor
+
+- Recommended: [Visual Studio Code](https://code.visualstudio.com/)
+
+---
 
 ## Getting Started
 
-Create an .env file (be aware that this file is not tracked by git) and add the following:
+### 1. Clone the Repository
+
+Open your terminal (Mac/Linux) or Command Prompt/PowerShell (Windows), then run:
 
 ```bash
-ALCHEMY_API_KEY=SOME-STRING-OF-CHARS
-INFURA_API_KEY=SOME-STRING-OF-CHARS
-JSON_RPC_URL="https://rpc.builder0x69.io"
-NETWORK="goerli"
-
+git clone https://github.com/your-username/your-repo-name.git
 ```
-> INFURA_API_KEY : Make sure to create a WEB3 API (Formely Ethereum) project on Infura and add the API key here.
 
-# Run the following commands:
 
-```sh
-Clone the project
+### 2. Navigate into the Project Directory
 
-Node version: 16 | 18 | 20
+```bash
+cd your-repo-name
+```
 
+### 3. Install Dependencies
+
+Run the following command to install all required dependencies:
+
+```bash
 npm install
-
-# Production
-npm run dev
-npm build
-
-# Using the Chrome
-and visit http://localhost:3000
 ```
 
+---
 
-## Contributing
-Would you like to contribute to this project?
+## Running the Application
 
-This project is open source and welcomes contributions. We focus layer on the CAW Manifesto. We are in the early stages of a Social Clearing house.
+### 1. Start the Development Server
 
-We are looking for people who want to contribute to the project, not just the code.
+Execute:
 
-## Recommended extensions
- - [BetterComments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
- - [GitLents](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
- - [ENV](https://marketplace.visualstudio.com/items?itemName=IronGeek.vscode-env)
+```bash
+npm run dev
+```
 
-## Built with
- - [TypeScript](https://www.typescriptlang.org/)
- - [Next.js](https://nextjs.org/)
- - [Chakra UI](https://chakra-ui.com/)
- - [Ethers.js](https://docs.ethers.io/v5/)
- - [Wagmi](https://wagmi.sh/)
- - [RainbowKit](https://www.rainbowkit.com/)
+*This command usually runs scripts like `webpack-dev-server` or `concurrently` to start both backend and frontend servers.*
+
+### 2. Access the Application
+
+Once the server is running, open your web browser and navigate to:
+
+```
+http://localhost:3000/
+```
+
+*The port number may vary; check your terminal output for the exact URL.*
+
+---
+
+## Additional Tips
+
+- **Running on different operating systems:**
+  - On **Mac/Linux**, you can use Terminal.
+  - On **Windows**, use Command Prompt, PowerShell, or Windows Terminal.
+  
+- **Permission issues:**  
+  If you encounter permission errors, try running commands with `sudo` (Linux/Mac) or run the terminal as Administrator (Windows).
+
+- **Keep dependencies updated:**  
+  Regularly update Node.js and npm to avoid compatibility issues.
+
+- **Using IDEs:**  
+  Use code editors like Visual Studio Code for better development experience, with extensions for JavaScript/React.
+
+---
+
+## Troubleshooting
+
+- **Node.js or npm not recognized:**  
+  Ensure they are installed correctly and added to your system PATH.
+
+- **Installation errors:**  
+  Delete `node_modules` folder and run `npm install` again:
+
+  ```bash
+  rm -rf node_modules
+  npm install
+  ```
+
+- **Port conflicts:**  
+  If port 3000 is occupied, change the port in your server configuration or stop the conflicting service.
+
+- **Dependencies fail to install:**  
+  Check your internet connection and npm registry status. Clear cache if needed:
+
+  ```bash
+  npm cache clean --force
+  ```
+
+---
