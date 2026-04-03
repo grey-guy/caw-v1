@@ -32,6 +32,6 @@ const sendGmail = (async () => {
         // await sgMail.send(msg);
         console.log('Email Sent');
     } catch (error) {
-        console.error('Error sending email:', error);
+       
     }
 })()
